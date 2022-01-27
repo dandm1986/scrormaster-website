@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="./js/script.js"></script>
+
+    <title>Scormaster</title>
+  </head>
+
+  <body>
+    <!------------- HEADER ------------->
+
+    <header class="header" id="home">
+      <nav class="nav nav-item">
+        <ul class="nav-links">
+          <li>
+            <a href="#home" class="nav-logo link"
+              ><img
+                src="./img/svg/Main_LOGO.svg"
+                alt="Scormaster logo"
+                class="header-logo"
+            /></a>
+          </li>
+          <li><a href="#how" class="nav-link link">How it works</a></li>
+          <li>
+            <a href="#testimonials" class="nav-link link">Testimonials</a>
+          </li>
+          <li><a href="#pricing" class="nav-link link">Pricing</a></li>
+        </ul>
+        <a href="#" class="btn btn--small btn--full btn--show-modal"
+          >Sign in!</a
+        >
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <!------------- HERO ------------->
+
+    <main>
+      <section class="section-hero">
+        <div class="hero-image container">
+          <div class="hero-grid">
+            <div>
+              <h1 class="hero-heading">
+                Your own online school<span class="accent">?</span> Why not!
+              </h1>
+              <p class="hero-text">
+                Get a ready-to-go online school filled up with your own
+                interactive courses!
+              </p>
+
+              <div class="hero-ad">
+                <p class="ad-strong">300<span class="accent">+</span></p>
+                <p class="ad-text">schools in 2021</p>
+              </div>
+
+              <div class="nav-item">
+                <a href="#cta" class="btn btn--big btn--full link"
+                  >Create online school!</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------- FEATURED ------------->
+
+      <section class="section-featured">
+        <p class="section-subheading featured-heading">As featured in</p>
+        <div class="featured-logos">
+          <img
+            src="./img/svg/Wired.svg"
+            alt="Logo of Wired magazine"
+            class="featured-logo"
+          />
+          <img
+            src="./img/svg/CIO.svg"
+            alt="Logo of CIO magazine"
+            class="featured-logo"
+          />
+          <img
+            src="./img/svg/Computer_World.svg"
+            alt="Logo of Computer World magazine"
+            class="featured-logo"
+          />
+        </div>
+      </section>
+
+      <!------------- HOW IT WORKS ------------->
+
+      <section class="section-how container reveal" id="how">
+        <p class="section-subheading">How it works</p>
+        <h2 class="section-heading">
+          Your online school in <span class="accent">3</span> simple steps
+        </h2>
+        <div class="grid-how">
+          <img
+            src="./img/svg/Step-1_LOGO.svg"
+            alt="Number 1"
+            class="step-number step-number--1"
+          />
+          <h3 class="step-heading step-heading--1">Share ideas</h3>
+          <p class="step-text step-text--1">
+            Show us your educational materials and describe what you want your
+            interactive courses to look like.
+          </p>
+          <img
+            src="./img/svg/Step-1_IMG.svg"
+            alt="A man and a woman in front of a computer"
+            class="step-img step-img--1"
+          />
+
+          <div class="row-gap row-gap--1"></div>
+
+          <img
+            src="./img/svg/Step-2_LOGO.svg"
+            alt="Number 2"
+            class="step-number step-number--2"
+          />
+          <h3 class="step-heading step-heading--2">Let us do the job</h3>
+          <p class="step-text step-text--2">
+            Give a name to your future online school and we do the rest: we turn
+            your materials into high-quality interactive courses and place them
+            in a user-friendly learning management system hosted on a dedicated
+            virtual server.
+          </p>
+          <img
+            src="./img/svg/Step-2_IMG.svg"
+            alt="A man programming"
+            class="step-img step-img--2"
+          />
+
+          <div class="row-gap row-gap--2"></div>
+
+          <img
+            src="./img/svg/Step-3_LOGO.svg"
+            alt="Number 3"
+            class="step-number step-number--3"
+          />
+          <h3 class="step-heading step-heading--3">Get the result</h3>
+          <p class="step-text step-text--3">
+            You get a ready-to-go online school filled up with your own
+            interactive courses. The only thing you need to do is to set the
+            price for your educational content and let your students create
+            accounts to get access to the courses they paid for.
+          </p>
+          <img
+            src="./img/svg/Step-3_IMG.svg"
+            alt="A woman in a chair and a man sitting on a table beside a computer"
+            class="step-img step-img--3"
+          />
+        </div>
+      </section>
+
+      <!------------- TESTIMONIALS ------------->
+
+      <section class="section-testimonials reveal" id="testimonials">
+        <!------ SECTION HEADER ------>
+
+        <p class="section-subheading">Testimonials</p>
+        <h2 class="section-heading">Join other tutors</h2>
+
+        <!------ SLIDER GRID ------>
+
+        <div class="slider-container">
+          <!-- LEFT BUTTON -->
+          <button class="btn-round btn-round--left">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="btn-round--icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+
+          <!-- SLIDES -->
+
+          <div class="slider">
+            <div class="slide slide--1">
+              <div class="testimonial-template">
+                <picture>
+                  <source
+                    srcset="./img/Alfred_Richards-small.webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./img/Alfred_Richards-small.png"
+                    type="image/png"
+                  />
+                  <img
+                    class="image-testimonial-author"
+                    src="./img/Alfred_Richards-small.png"
+                    alt="Alfred Richards"
+                  />
+                </picture>
+
+                <blockquote class="testimonial">
+                  <p class="testimonial-text">
+                    "I've always wanted to launch my own online-course on
+                    investments but didn't know where to start. Here I got a
+                    quality and ready-to-use product!"
+                  </p>
+                  <div class="testimonial-name">
+                    <p class="testimonial-author">Alfred Richards</p>
+                    <p class="testimonial-job">
+                      ETF Capital Markets Specialist at Vanguard
+                    </p>
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="slide slide--2">
+              <div class="testimonial-template">
+                <picture>
+                  <source
+                    srcset="./img/Ashley_Powell-small.webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./img/Ashley_Powell-small.png"
+                    type="image/png"
+                  />
+                  <img
+                    class="image-testimonial-author"
+                    src="./img/Ashley_Powell-small.png"
+                    alt="Ashley Powell"
+                  />
+                </picture>
+
+                <blockquote class="testimonial">
+                  <p class="testimonial-text">
+                    "I already had ready-made courses, but I could not find a
+                    suitable site for placement. Now with my own online school I
+                    don't have to pay any fees to intermediary platforms."
+                  </p>
+                  <div class="testimonial-name">
+                    <p class="testimonial-author">Ashley Powell</p>
+                    <p class="testimonial-job">
+                      Senior UI Designer at Quovantis Technologies
+                    </p>
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="slide slide--3">
+              <div class="testimonial-template">
+                <picture>
+                  <source
+                    srcset="./img/Matthew_Blaese-small.webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./img/Matthew_Blaese-small.png"
+                    type="image/png"
+                  />
+                  <img
+                    class="image-testimonial-author"
+                    src="./img/Matthew_Blaese-small.png"
+                    alt="Matthew Blaese"
+                  />
+                </picture>
+
+                <blockquote class="testimonial">
+                  <p class="testimonial-text">
+                    "I am a professional in my field, but I don't know how to
+                    teach. Here they helped me to turn my knowledge into real
+                    educational materials. Now all I have to do is to find
+                    students."
+                  </p>
+                  <div class="testimonial-name">
+                    <p class="testimonial-author">Matthew Blaese</p>
+                    <p class="testimonial-job">
+                      Senior Product Manager at EDP Comercial
+                    </p>
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="slide slide--4">
+              <div class="testimonial-template">
+                <picture>
+                  <source
+                    srcset="./img/Patricia_Riley-small.webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./img/Patricia_Riley-small.png"
+                    type="image/png"
+                  />
+                  <img
+                    class="image-testimonial-author"
+                    src="./img/Patricia_Riley-small.png"
+                    alt="Patricia Riley"
+                  />
+                </picture>
+
+                <blockquote class="testimonial">
+                  <p class="testimonial-text">
+                    "I always understood that as a school teacher I was giving
+                    important knowledge to kids, but running my own school I saw
+                    that many people all over the world were willing to really
+                    pay for it."
+                  </p>
+                  <div class="testimonial-name">
+                    <p class="testimonial-author">Patricia Riley</p>
+                    <p class="testimonial-job">High School English Teacher</p>
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT BUTTON -->
+          <button class="btn-round btn-round--right">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="btn-round--icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+
+          <!-- DOTS -->
+          <div class="dots"></div>
+        </div>
+      </section>
+
+      <!------------- PRICING ------------->
+
+      <section class="section-pricing container reveal" id="pricing">
+        <p class="section-subheading">Pricing</p>
+        <h2 class="section-heading">Share your knowledge with the world!</h2>
+
+        <div class="pricing-plans">
+          <div class="pricing-plan pricing-plan--starter">
+            <header class="plan-header">
+              <p class="plan-name">Starter</p>
+              <p class="plan-price"><span class="accent">$</span>400</p>
+              <p class="plan-text">LMS only</p>
+            </header>
+            <ul class="plan-list">
+              <li class="list-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="list-icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Customized LMS</span>
+              </li>
+              <li class="list-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="list-icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>1 interactive course included</span>
+              </li>
+              <li class="list-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="list-icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>40 hours of support included</span>
+              </li>
+            </ul>
+            <a href="#" class="btn btn--big btn--outline"
+              >Create online school!</a
+            >
+          </div>
+
+          <div class="pricing-plan pricing-plan--complete">
+            <header class="plan-header">
+              <div class="complete-name">
+                <img
+                  src="./img/svg/Semi-circle_10px.svg"
+                  alt="Semi-circle"
+                  class="semi-circle-complete"
+                />
+                <p class="plan-name">Complete</p>
+              </div>
+
+              <p class="plan-price"><span class="accent">$</span>1.200</p>
+              <p class="plan-text">LMS and courses</p>
+            </header>
+            <ul class="plan-list">
+              <li class="list-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="list-icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Customized LMS</span>
+              </li>
+              <li class="list-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="list-icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>6 interactive courses included</span>
+              </li>
+              <li class="list-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="list-icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>100 hours of support included</span>
+              </li>
+            </ul>
+            <a href="#" class="btn btn--big btn--full">Create online school!</a>
+          </div>
+        </div>
+
+        <!------------- FEATURES ------------->
+
+        <div class="features">
+          <div class="feature">
+            <img
+              src="./img/svg/LMS.svg"
+              alt="Learning Management System"
+              class="feature-img"
+            />
+            <h4 class="feature-heading">User-friendly LMS</h4>
+            <p class="feature-text">
+              Simple and convenient learning management system. Nothing extra -
+              only the most necessary functionality for your students.
+            </p>
+          </div>
+          <div class="feature">
+            <img
+              src="./img/svg/Course.svg"
+              alt="Learning Management System"
+              class="feature-img"
+            />
+            <h4 class="feature-heading">Interactive courses</h4>
+            <p class="feature-text">
+              The best way to pack your educational materials. Your students
+              will be able to study effectively and with interest on their own
+              and at a convenient time.
+            </p>
+          </div>
+          <div class="feature">
+            <img
+              src="./img/svg/Support.svg"
+              alt="Learning Management System"
+              class="feature-img"
+            />
+            <h4 class="feature-heading">Necessary support</h4>
+            <p class="feature-text">
+              You can spend support hours addressing technical issues or
+              creating new courses.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!------------- CTA ------------->
+
+      <section class="section-cta reveal" id="cta">
+        <div class="container">
+          <header class="cta-header">
+            <img
+              src="./img/svg/Semi-circle_10px.svg"
+              alt="Semi-circle"
+              class="semi-circle-cta"
+            />
+            <h2 class="section-heading">Get your free demo access</h2>
+            <p class="cta-text">
+              Wonder what your students may experience? See for yourself!
+            </p>
+          </header>
+          <div class="cta-body">
+            <form action="#" class="form form--cta">
+              <input
+                type="text"
+                id="full-name"
+                placeholder="Full name"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                placeholder="Email address"
+                required
+              />
+              <input
+                type="text"
+                id="expertise"
+                placeholder="Field of expertise"
+                required
+              />
+              <select name="" id="select-where" required>
+                <option value="">Where did you hear from us?</option>
+                <option value="friends">Friends and family</option>
+                <option value="youtube">YouTube video</option>
+                <option value="podcast">Podcast</option>
+                <option value="ad">Facebook ad</option>
+                <option value="others">Others</option>
+              </select>
+              <button class="btn btn--big btn--cta">Submit</button>
+            </form>
+            <img
+              src="./img/svg/CTA_IMG.svg"
+              alt="Woman and an app on a desktop, tablet and phone screen"
+              class="cta-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!------------- FOOTER ------------->
+
+      <footer class="footer">
+        <div class="footer-grid">
+          <div class="footer-logo-section">
+            <img
+              src="./img/svg/Main_LOGO.svg"
+              alt="Scormaster logo"
+              class="footer-logo"
+            />
+            <ul class="social-links">
+              <li>
+                <a href="#" class="footer-link"
+                  ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="footer-link"
+                  ><ion-icon class="social-icon" name="logo-linkedin"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="footer-link"
+                  ><ion-icon
+                    class="social-icon"
+                    name="logo-instagram"
+                  ></ion-icon
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <p class="copyright">
+            Copyright &copy; <span class="year"></span> by Scormaster Inc. All
+            rights reserved.
+          </p>
+          <div class="contacts">
+            <a class="footer-link" href="tel:415-935-4562">415-935-4562</a>
+            <!-- <br /> -->
+            <a class="footer-link" href="mailto:hello@scormaster.com"
+              >hello@scormaster.com</a
+            >
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <div class="modal-container">
+      <div class="modal sign-in hidden">
+        <ion-icon class="btn--close-modal" name="close-outline"></ion-icon>
+        <form action="#" class="form form--sign-in">
+          <input
+            class="form-el"
+            type="text"
+            id="login"
+            placeholder="login"
+            required
+          />
+          <input
+            class="form-el"
+            type="text"
+            id="password"
+            placeholder="password"
+            required
+          />
+          <button class="btn btn--small btn--full form-el">Continue</button>
+          <a href="#" class="btn btn--small btn--outline form-el"
+            >Create account</a
+          >
+        </form>
+      </div>
+    </div>
+
+    <div class="modal order hidden">
+      <h3>Thank you for choosing Scormaster!</h3>
+      <p>We will contact you shortly to specify your project details!</p>
+    </div>
+
+    <div class="overlay hidden"></div>
+  </body>
+</html>

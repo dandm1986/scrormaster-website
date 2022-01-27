@@ -1,0 +1,408 @@
+/**************************/
+/* BELOW 1360px (Smaller desktop) */
+/**************************/
+
+@media (max-width: 85em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/**************************/
+/* BELOW 1232px (Landscape tablets) */
+/**************************/
+
+@media (max-width: 77em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/**************************/
+/* BELOW 1024px (Tablets) */
+/**************************/
+
+@media (max-width: 69em) {
+  html {
+    font-size: 50%;
+  }
+
+  .container {
+    max-width: 80rem;
+    padding: 6.4rem 0;
+    margin: 0 auto;
+  }
+
+  .section-heading {
+    font-size: 3.2rem;
+  }
+
+  .section-subheading {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  .btn--big {
+    font-size: 1.8rem;
+    padding: 1.6rem 3.2rem;
+  }
+
+  /**************************/
+  /* HERO SECTION */
+  /**************************/
+
+  .section-hero {
+    border-bottom: 2px solid var(--color-accent);
+  }
+
+  .hero-image {
+    background-size: 50%;
+  }
+
+  .hero-heading {
+    font-size: 4.4rem;
+  }
+
+  .hero-text {
+    font-size: 2rem;
+    width: 50%;
+    margin-bottom: 6.4rem;
+  }
+
+  /**************************/
+  /* FETURED SECTION */
+  /**************************/
+
+  .featured-logo {
+    height: 3rem;
+  }
+
+  /**************************/
+  /* HERO SECTION */
+  /**************************/
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /**************************/
+  /* HOW IT WORKS SECTION */
+  /**************************/
+
+  .step-number {
+    height: 7rem;
+  }
+
+  .step-heading {
+    font-size: 3rem;
+  }
+
+  .step-text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+
+  /**************************/
+  /* TESTIMONIALS SECTION */
+  /**************************/
+
+  .section-testimonials {
+    padding: 6.4rem 0;
+  }
+
+  .testimonial-template {
+    padding: 3.2rem 8rem;
+    column-gap: 8rem;
+  }
+
+  .image-testimonial-author {
+    transform: scale(1.4);
+  }
+
+  .testimonial {
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+    padding: 3.2rem 0;
+  }
+
+  .testimonial-text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+
+  .testimonial-author {
+    font-size: 1.2rem;
+  }
+  .testimonial-job {
+    font-size: 1.2rem;
+  }
+
+  /**************************/
+  /* PRICING SECTION */
+  /**************************/
+
+  .pricing-plans {
+    padding: 3.2rem 0 6.4rem 0;
+    column-gap: 6rem;
+  }
+
+  .pricing-plan {
+    padding: 4.8rem 3.2rem;
+  }
+
+  /* FEATURES */
+
+  .feature {
+    padding: 3.2rem;
+  }
+
+  .feature-img {
+    width: 4.8rem;
+  }
+
+  .feature-heading {
+    font-size: 2rem;
+  }
+
+  .feature-text {
+    line-height: 1.6;
+  }
+
+  /**************************/
+  /* CTA SECTION */
+  /**************************/
+
+  .semi-circle-cta {
+    height: 5.4rem;
+    transform: translate(-1.6rem, -1.1rem);
+  }
+
+  /**************************/
+  /* FOOTER */
+  /**************************/
+
+  .footer {
+    padding: 6.4rem;
+  }
+
+  .footer-logo {
+    width: 15rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .social-links {
+    column-gap: 2rem;
+  }
+
+  .social-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .copyright {
+    font-size: 1.4rem;
+  }
+
+  .contacts .footer-link {
+    font-size: 1.4rem;
+  }
+}
+
+/**************************/
+/* BELOW 320px (Phones) */
+/**************************/
+
+@media (max-width: 20em) {
+  html {
+    font-size: 50%;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .container {
+    max-width: 30rem;
+    padding: 6.4rem 0;
+    margin: 0 auto;
+  }
+
+  .section-heading {
+    font-size: 3.2rem;
+  }
+
+  .section-subheading {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  .btn--big {
+    font-size: 1.8rem;
+    padding: 1.6rem 3.2rem;
+  }
+
+  /**************************/
+  /* HERO SECTION */
+  /**************************/
+
+  .section-hero {
+    border-bottom: 2px solid var(--color-accent);
+  }
+
+  .hero-image {
+    background-size: 50%;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .hero-heading {
+    font-size: 3.6rem;
+  }
+
+  .hero-text {
+    font-size: 2rem;
+    width: 50%;
+    margin-bottom: 6.4rem;
+  }
+
+  /**************************/
+  /* FETURED SECTION */
+  /**************************/
+
+  .featured-logo {
+    height: 3rem;
+  }
+
+  /**************************/
+  /* HERO SECTION */
+  /**************************/
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /**************************/
+  /* HOW IT WORKS SECTION */
+  /**************************/
+
+  .step-number {
+    height: 7rem;
+  }
+
+  .step-heading {
+    font-size: 3rem;
+  }
+
+  .step-text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+
+  /**************************/
+  /* TESTIMONIALS SECTION */
+  /**************************/
+
+  .section-testimonials {
+    padding: 6.4rem 0;
+  }
+
+  .testimonial-template {
+    padding: 3.2rem 8rem;
+    column-gap: 8rem;
+  }
+
+  .image-testimonial-author {
+    transform: scale(1.4);
+  }
+
+  .testimonial {
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+    padding: 3.2rem 0;
+  }
+
+  .testimonial-text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+
+  .testimonial-author {
+    font-size: 1.2rem;
+  }
+  .testimonial-job {
+    font-size: 1.2rem;
+  }
+
+  /**************************/
+  /* PRICING SECTION */
+  /**************************/
+
+  .pricing-plans {
+    padding: 3.2rem 0 6.4rem 0;
+    column-gap: 6rem;
+  }
+
+  .pricing-plan {
+    padding: 4.8rem 3.2rem;
+  }
+
+  /* FEATURES */
+
+  .feature {
+    padding: 3.2rem;
+  }
+
+  .feature-img {
+    width: 4.8rem;
+  }
+
+  .feature-heading {
+    font-size: 2rem;
+  }
+
+  .feature-text {
+    line-height: 1.6;
+  }
+
+  /**************************/
+  /* CTA SECTION */
+  /**************************/
+
+  .semi-circle-cta {
+    height: 5.4rem;
+    transform: translate(-1.6rem, -1.1rem);
+  }
+
+  /**************************/
+  /* FOOTER */
+  /**************************/
+
+  .footer {
+    padding: 6.4rem;
+  }
+
+  .footer-logo {
+    width: 15rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .social-links {
+    column-gap: 2rem;
+  }
+
+  .social-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .copyright {
+    font-size: 1.4rem;
+  }
+
+  .contacts .footer-link {
+    font-size: 1.4rem;
+  }
+}
