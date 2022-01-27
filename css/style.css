@@ -328,13 +328,16 @@
   column-gap: 6.4rem;
 }
 
+.testimonial-template picture {
+  text-align: center;
+  align-self: center;
+}
+
 .image-testimonial-author {
   height: 30rem;
   border-radius: 9px;
   transform: scale(1.5);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-
-  align-self: center;
 }
 
 .testimonial {
