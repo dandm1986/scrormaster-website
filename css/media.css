@@ -209,10 +209,10 @@
 }
 
 /**************************/
-/* BELOW 320px (Phones) */
+/* BELOW 432px (Phones) */
 /**************************/
 
-@media (max-width: 20em) {
+@media (max-width: 27em) {
   html {
     font-size: 50%;
   }
@@ -222,7 +222,7 @@
   }
 
   .container {
-    max-width: 30rem;
+    width: 62.5vw;
     padding: 6.4rem 0;
     margin: 0 auto;
   }
@@ -245,48 +245,87 @@
   /* HERO SECTION */
   /**************************/
 
-  .section-hero {
-    border-bottom: 2px solid var(--color-accent);
+  .hero-image {
+    background-position: center bottom;
+    background-size: 90%;
   }
 
-  .hero-image {
-    background-size: 50%;
+  .hero-image.container {
+    padding-bottom: 26rem;
   }
 
   .hero-grid {
-    display: grid;
     grid-template-columns: 1fr;
   }
 
   .hero-heading {
     font-size: 3.6rem;
+    margin-bottom: 2.4rem;
   }
 
   .hero-text {
-    font-size: 2rem;
-    width: 50%;
-    margin-bottom: 6.4rem;
+    font-size: 1.8rem;
+    line-height: 1.4;
+
+    width: 100%;
+
+    margin-bottom: 4.8rem;
   }
+
+  .hero-ad {
+    font-size: 1.6rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .ad-strong {
+    font-size: 2em;
+  }
+
+  /* 
+  --- Font sizes (px) ---
+
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+  
+  --- Spacing system (px) ---
+
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+  
+  */
 
   /**************************/
   /* FETURED SECTION */
   /**************************/
 
-  .featured-logo {
-    height: 3rem;
+  .section-featured {
+    padding: 6.4rem 0;
   }
 
-  /**************************/
-  /* HERO SECTION */
-  /**************************/
+  .featured-heading {
+    margin-bottom: 4.8rem;
+  }
 
-  .hero-grid {
-    grid-template-columns: 1fr;
+  .featured-logos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .featured-logo {
+    height: 3rem;
+    opacity: 30%;
+    align-self: center;
+  }
+
+  .featured-logo:not(:last-child) {
+    margin-bottom: 2.4rem;
   }
 
   /**************************/
   /* HOW IT WORKS SECTION */
   /**************************/
+
+  .section-how {
+    display: none;
+  }
 
   .step-number {
     height: 7rem;
@@ -307,6 +346,7 @@
 
   .section-testimonials {
     padding: 6.4rem 0;
+    display: none;
   }
 
   .testimonial-template {
@@ -340,6 +380,10 @@
   /* PRICING SECTION */
   /**************************/
 
+  .section-pricing {
+    display: none;
+  }
+
   .pricing-plans {
     padding: 3.2rem 0 6.4rem 0;
     column-gap: 6rem;
@@ -371,6 +415,10 @@
   /* CTA SECTION */
   /**************************/
 
+  .section-cta {
+    display: none;
+  }
+
   .semi-circle-cta {
     height: 5.4rem;
     transform: translate(-1.6rem, -1.1rem);
@@ -382,6 +430,7 @@
 
   .footer {
     padding: 6.4rem;
+    display: none;
   }
 
   .footer-logo {
