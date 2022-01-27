@@ -193,6 +193,7 @@ observerPricing.observe(sectionPricing);
 
 // ------------- VARIABLES -------------
 
+const slider = document.querySelector(`.slider`);
 const slides = document.querySelectorAll(`.slide`);
 const btnLeft = document.querySelector(`.btn-round--left`);
 const btnRight = document.querySelector(`.btn-round--right`);
@@ -289,6 +290,65 @@ dotContainer.addEventListener(`click`, function (e) {
     activateDot(slide);
   }
 });
+
+// --- Touch events
+
+// document.addEventListener('touchstart', handleTouchStart, false);
+// document.addEventListener('touchmove', handleTouchMove, false);
+slider.addEventListener('touchstart', handleTouchStart, false);
+slider.addEventListener('touchmove', handleTouchMove, false);
+
+let xDown = null;
+let yDown = null;
+
+function getTouches(evt) {
+  return (
+    evt.touches || // browser API
+    evt.originalEvent.touches
+  ); // jQuery
+}
+
+function handleTouchStart(evt) {
+  const firstTouch = getTouches(evt)[0];
+  xDown = firstTouch.clientX;
+  yDown = firstTouch.clientY;
+}
+
+function handleTouchMove(evt) {
+  if (!xDown || !yDown) {
+    return;
+  }
+
+  const xUp = evt.touches[0].clientX;
+  const yUp = evt.touches[0].clientY;
+
+  const xDiff = xDown - xUp;
+  const yDiff = yDown - yUp;
+
+  if (Math.abs(xDiff) > Math.abs(yDiff)) {
+    /*most significant*/
+    if (xDiff > 0) {
+      console.log(`right swipe`);
+      nextSlide();
+      /* right swipe */
+    } else {
+      console.log(`left swipe`);
+      prevSlide();
+      /* left swipe */
+    }
+  } else {
+    if (yDiff > 0) {
+      console.log(`down swipe`);
+      /* down swipe */
+    } else {
+      console.log(`up swipe`);
+      /* up swipe */
+    }
+  }
+  /* reset values */
+  xDown = null;
+  yDown = null;
+}
 
 //
 // --------------------------- SET CURRENT YEAR ---------------------------
