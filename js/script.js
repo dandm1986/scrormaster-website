@@ -293,8 +293,6 @@ dotContainer.addEventListener(`click`, function (e) {
 
 // --- Touch events
 
-// document.addEventListener('touchstart', handleTouchStart, false);
-// document.addEventListener('touchmove', handleTouchMove, false);
 slider.addEventListener('touchstart', handleTouchStart, false);
 slider.addEventListener('touchmove', handleTouchMove, false);
 
@@ -328,20 +326,20 @@ function handleTouchMove(evt) {
   if (Math.abs(xDiff) > Math.abs(yDiff)) {
     /*most significant*/
     if (xDiff > 0) {
-      console.log(`right swipe`);
+      // console.log(`right swipe`);
       nextSlide();
       /* right swipe */
     } else {
-      console.log(`left swipe`);
+      // console.log(`left swipe`);
       prevSlide();
       /* left swipe */
     }
   } else {
     if (yDiff > 0) {
-      console.log(`down swipe`);
+      // console.log(`down swipe`);
       /* down swipe */
     } else {
-      console.log(`up swipe`);
+      // console.log(`up swipe`);
       /* up swipe */
     }
   }
