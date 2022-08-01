@@ -35,30 +35,30 @@
 
     <header class="header" id="home">
       <nav class="nav nav-item">
-        <ul class="nav-links">
-          <li>
-            <a href="#home" class="nav-logo link"
-              ><img
-                src="./img/svg/Main_LOGO.svg"
-                alt="Scormaster logo"
-                class="header-logo"
-            /></a>
-          </li>
-          <li><a href="#how" class="nav-link link">How it works</a></li>
-          <li>
-            <a href="#testimonials" class="nav-link link">Testimonials</a>
-          </li>
-          <li><a href="#pricing" class="nav-link link">Pricing</a></li>
-        </ul>
-        <a href="#" class="btn btn--small btn--full btn--show-modal"
-          >Sign in!</a
-        >
-      </nav>
+        <a href="#home" class="nav-logo link"
+          ><img
+            src="./img/svg/Main_LOGO.svg"
+            alt="Scormaster logo"
+            class="header-logo"
+        /></a>
+        <div class="links-container">
+          <ul class="nav-links">
+            <li><a href="#how" class="nav-link link">How it works</a></li>
+            <li>
+              <a href="#testimonials" class="nav-link link">Testimonials</a>
+            </li>
+            <li><a href="#pricing" class="nav-link link">Pricing</a></li>
+          </ul>
 
-      <button class="btn-mobile-nav">
-        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-      </button>
+          <a href="#" class="btn btn--small btn--full btn--show-modal"
+            >Sign in!</a
+          >
+        </div>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </nav>
     </header>
 
     <!------------- HERO ------------->
@@ -683,10 +683,10 @@
       </div>
     </div>
 
-    <div class="modal order hidden">
+    <!-- <div class="modal order hidden">
       <h3>Thank you for choosing Scormaster!</h3>
       <p>We will contact you shortly to specify your project details!</p>
-    </div>
+    </div> -->
 
     <div class="overlay hidden"></div>
   </body>

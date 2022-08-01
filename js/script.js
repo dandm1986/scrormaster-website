@@ -20,6 +20,7 @@ setTimeout(function () {
 const nav = document.querySelector(`.nav`);
 const navHeight = nav.getBoundingClientRect().height;
 const sectionHero = document.querySelector(`.section-hero`);
+const header = document.querySelector('.header');
 
 //
 // --------------------------- SMOOTH PAGE NAV ---------------------------
@@ -58,6 +59,8 @@ document.querySelectorAll(`.nav-item`).forEach(el => {
         behavior: 'smooth',
       });
     }
+
+    link.classList.contains('nav-link') && header.classList.toggle('nav-open');
   });
 });
 
@@ -84,7 +87,6 @@ heroObserver.observe(sectionHero);
 //
 
 const btnNav = document.querySelector('.btn-mobile-nav');
-const header = document.querySelector('.header');
 
 btnNav.addEventListener('click', function () {
   header.classList.toggle('nav-open');
