@@ -3,6 +3,7 @@
 - Sample website for a fictional start-up - just for design practicing.
 - HTML, CSS and pure JS. No form-data handling.
 - Adaptive design.
+- [Published website](https://scormaster.netlify.app/)
 
 ## Features added with JS
 
