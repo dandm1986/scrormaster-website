@@ -302,10 +302,7 @@ let xDown = null;
 let yDown = null;
 
 function getTouches(evt) {
-  return (
-    evt.touches || // browser API
-    evt.originalEvent.touches
-  ); // jQuery
+  return evt.touches || evt.originalEvent.touches;
 }
 
 function handleTouchStart(evt) {
@@ -326,26 +323,21 @@ function handleTouchMove(evt) {
   const yDiff = yDown - yUp;
 
   if (Math.abs(xDiff) > Math.abs(yDiff)) {
-    /*most significant*/
     if (xDiff > 0) {
-      // console.log(`right swipe`);
       nextSlide();
       /* right swipe */
     } else {
-      // console.log(`left swipe`);
       prevSlide();
       /* left swipe */
     }
   } else {
     if (yDiff > 0) {
-      // console.log(`down swipe`);
       /* down swipe */
     } else {
-      // console.log(`up swipe`);
       /* up swipe */
     }
   }
-  /* reset values */
+
   xDown = null;
   yDown = null;
 }
