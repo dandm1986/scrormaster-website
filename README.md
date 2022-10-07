@@ -1,15 +1,21 @@
 # Scormaster website
 
-- Sample website for a fictional start-up - just for design practicing.
-- HTML, CSS and pure JS. No form-data handling.
-- Adaptive design.
-- [Published website](https://scormaster.netlify.app/)
+Sample website for a fictional start-up - just for design practicing.
+[Published website](https://scormaster.netlify.app/)
 
-## Features added with JS
+## Technologies used
 
+- HTML5
+- CSS3
+- JavaScript
+
+## Features
+
+- Adaptive design
 - Smooth page navigation
 - Sticky navbar
 - Mobile navbar
 - Focus navbar link on section entry
 - Sections revealing
 - Slider with event handlers (buttons, keys, dots, touch)
+- No form-data handling
